@@ -1,0 +1,25 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title color='tertiary'>{{article.title}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding >
+
+<ion-card >
+	<ion-img [src]="article.urlToImage"></ion-img>
+	<p padding>{{article.source.name}}</p>
+  <ion-card-header>
+   
+    <ion-card-title> {{article.title}}</ion-card-title>
+    
+  </ion-card-header>
+
+  <ion-card-content> {{article.description}}
+  	<br>
+  	{{article.content}}
+  </ion-card-content>
+</ion-card>
+
+
+</ion-content>

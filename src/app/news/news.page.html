@@ -1,0 +1,20 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title color='tertiary'>Actualités sport maroc</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding color="light" >
+
+<ion-card *ngFor="let article of data?.articles" (click)="onGoToNewsSinglePage(article)">
+	<ion-img [src]="article.urlToImage"></ion-img>
+	<p padding>{{article.source.name}}</p>
+  <ion-card-header>
+   
+    <ion-card-title> {{article.title}}</ion-card-title>
+    
+  </ion-card-header>
+</ion-card>
+
+
+</ion-content>
